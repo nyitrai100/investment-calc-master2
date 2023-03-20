@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <title>Investment calc</title>
+</head>
+<body>
+    <nav class="nav">
+        <p class="title">Investment Calculator</p>
+        <button class="navBtn">FAQ</button>
+    </nav>
+    <section class="inputContainer">
+        <div class="DepContainer">
+            <p>Deposit Amount</p>
+           <p class="promtInput"> Minimum $5,000</p>
+        </div>
+        <div class="DurContainer">
+            <p id="durText">Duration in months</p>
+            <p class="promtInput">Max. 60 Months</p>
+        </div>
+        <div class="depInput">
+            <input type="number" id="deposit" value="10000">
+        </div>
+        <div class="durInput">
+            <select name="" id="duration">
+                <option value="12">12 Months</option>
+                <option value="24">24 Months</option>
+                <option value="36">36 Months</option>
+                <option value="60">60 Months</option>
+            </select>
+        </div>
+    </section>
+    <section class="mainContainer">
+        <div class="compoundSwitch">
+            <label class="switch">
+                <input type="checkbox" id="isCompound">
+                <span class="slider round"></span>
+            </label>
+            <p>Compounding</p>
+        </div>
+        <div class="canvasContainer">
+            <div class="canvasText">
+                <p class="pieTotalText">Total Balance</p>
+                <p id="pieText"></p>
+                <Br />
+            </div>
+            <canvas id="data-set"></canvas>
+        </div>
+        <div class="footContainer">
+            <div class="AmountContainer">
+                <p>Principle Amount</p>
+                <p class='bigNum' id="principleBalance">$10,00</p>
+            </div>
+            <div class="BalanceContainer">
+                <p>Total Balance</p>
+                <p class='bigNum' id="totalBalance">$17,116</p>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
