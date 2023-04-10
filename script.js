@@ -140,7 +140,7 @@ const data = {
     {
       data: [getPrinciplePercentage(), getProfitPercentage()],
       borderWidth: 1,
-      backgroundColor: ["#9CA3AF", "#1E40AF"],
+      backgroundColor: ["#D0CEDF", "#283C53"],
     },
   ],
 };
